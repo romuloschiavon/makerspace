@@ -51,8 +51,7 @@
       </div>
       </center>
       <h4 class="card-title mt-3 text-center">Meu perfil</h4>
-
-      <form action="/rotadecadastro" method="post">
+      <form action="/" method="pull">
         <div class="form-group input-group">
           <div class="input-group-prepend">
               <span class="input-group-text"> <i class="fa fa-user"></i> </span>
@@ -60,7 +59,7 @@
               <input
               name="Nome"
               class="form-control" 
-              placeholder="Nome Completo" 
+              placeholder="Nome Completo do usuário" 
               type="text">
           </div>
           <div class="form-group input-group">
@@ -71,7 +70,8 @@
               name="cpf" 
               class="form-control" 
               placeholder="CPF" 
-              type="number">
+              type="number"
+              disabled>
           </div>
           <div class="form-group input-group">
             <div class="input-group-prepend">
@@ -90,36 +90,8 @@
             name="telefone" 
             class="form-control" 
             placeholder="Número de telefone" 
-            type="text">
+            type="number">
           </div>
-          <div class="form-group input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text"> <i class="fa fa-unlock-alt"></i> </span>
-          </div>
-              <input 
-              class="form-control" 
-              placeholder="Crie uma senha" 
-              type="password">
-          </div>
-          <div class="form-group input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-          </div>
-              <input 
-              class="form-control" 
-              placeholder="Repita a senha" 
-              type="password">
-          </div>  
-           <div class="form-group input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text"> <i class="fas fa-user-graduate">       Acadêmico da UFSC?</i> </span>
-          </div>
-              <input class="checkboxcontrol" value="academicoufsc" type="checkbox">
-          </div>  
-          <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-block"> Criar conta  </button>
-          </div>
-              <p class="text-center">Já tem uma conta? <a href="./login.html">Entre por aqui</a></p>                           
       </form>
       </article>
 
