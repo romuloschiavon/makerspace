@@ -12,8 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     
   </head>
@@ -49,33 +49,55 @@
 
 <!-- Corpo -->
 <body>
-		<div>
-			<ul>
-				<li>
-					<h1>Solicitar Reserva</h1>
-					<form>
-          <div class="form-group input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text"> <i class="fa fa-at"></i> </span>
-          </div>
-              <input name="datareserva" 
-              class="form-control" 
-              placeholder="Data da Reserva" 
-              type="date"
-              min="2019-01-01"
-              max="2020-01-01">
-          </div>
-				</li>
-			</ul>
-		</div>
-		<div>
-			<ul>
-				<li>
-					<a>a</a>
-				</li>
-			</ul>
-		</div>
-
+	<div class="container-fluid">
+    <hr>
+    <h3>Solicitar Reserva</h3>
+    <div class=row>
+      <div class="col-md-4 left">
+  			<ul>
+				  <li>
+  					<h5>Data da Reserva</h5>
+					  <form action="/rotadereserva">
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"> <i class="fa fa-at"></i> </span>
+              </div>
+                  <input name="datareserva" 
+                    class="form-control" 
+                    placeholder="Data da Reserva" 
+                    type="date"
+                    min="2019-01-01"
+                    max="2020-01-01">
+            </div>
+				  </li>
+			  </ul>
+		  </div>
+		  <div class="col-md-4 right">
+  			<ul>
+				  <li>
+            <h5>Horário</h5>
+            <form action="/rotadereserva">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"> <i class="fa fa-at"></i> </span>
+                  </div>
+                      <input list="Horarios">
+                        <select id="horarios">
+                          <option value="08a09">08:00 as 09:00</option>
+                          <option value="09a10">09:00 as 10:00</option>
+                          <option value="10a11a">10:00 as 11:00</option>
+                          <option value="11a12a">11:00 as 12:00</option>
+                          <option value="14a15">14:00 as 15:00</option>
+                          <option value="15a16">15:00 as 16:00</option>
+                          <option value="16a17">16:00 as 17:00</option>
+                          <option value="17a18">17:00 as 18:00</option>
+                        </select>
+                </div>
+				  </li>
+			  </ul>
+      </div>
+    </div>
+	</div>
 </body>
 
 <!-- Rodapé -->
@@ -116,8 +138,8 @@
   </footer>
 
       <!-- Jquery, Popper e BootStrap -->
-      <script src="node_modules/jquery/dist/jquery.js"></script>
-      <script src="node_modules/Popper.js/dist/popper.js"></script>
-      <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="node_modules/bootstrap/js/bootstrap.js" type="text/javascript"></script>
 
 </html>
